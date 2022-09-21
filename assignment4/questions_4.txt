@@ -1,0 +1,16 @@
+1. Why do mobile phones usually ignore auto play on video elements?
+
+2. What will the CSS snippet at the end of this section do if the visitor is browsing on a device with 320
+x 568 resolution?
+
+3. Mention some of the advantages of having a single responsive website instead of dedicated versions
+like m.til.no for mobile and til.no for desktop?
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+ #logo {
+ display: none;
+ }
+}
+
+

@@ -1,0 +1,29 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Part 3 */
+.wrapper{
+  height: 100%;
+  background-color: aliceblue;
+}
+
+footer {
+  background-color: blue;
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+}
+
+
+
+
+/* Part 4 */
+ul{
+  list-style-type: square;
+}
+li:last-child {
+  color:dodgerblue;
+}
