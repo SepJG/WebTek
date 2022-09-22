@@ -1,16 +1,24 @@
 1. Why do mobile phones usually ignore auto play on video elements?
+They ignore it in order to preserve bandwidth and battery and to prevent performance issues.
 
 2. What will the CSS snippet at the end of this section do if the visitor is browsing on a device with 320
 x 568 resolution?
-
-3. Mention some of the advantages of having a single responsive website instead of dedicated versions
-like m.til.no for mobile and til.no for desktop?
-@media only screen
-and (min-width : 768px)
-and (max-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
  #logo {
  display: none;
  }
 }
+Nothing
+Because the width is 320px, and it's between the min-width and max-width, the logo's display wont vanish.
+
+3. Mention some of the advantages of having a single responsive website instead of dedicated versions
+like m.til.no for mobile and til.no for desktop?
+1) Single website
+2) Simpler, cheaper marketing.
+3) Speedier updates
+4) Wider audience reach
+5) Easier to hire web devs
+6) Enhance ranking in mobile search results
+7) User experience friendly
 
 

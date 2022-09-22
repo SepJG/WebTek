@@ -1,3 +1,14 @@
 1. What is the difference between position: absolute and position: fixed?
+Absolute position is when the element positions in relation to to its containing element. 
+It is taken out of normal flow, which means that it doesn't affect the position of any surrounding elements. 
+Absolutely positioned elements move as users scroll up and down the page.
+
+Fixed position is a form of absolute position that positions the element in relation to the browser window, as opposed to the containing element.
+Elements with fixed positioning do not affect the position of surrounding elements and they do not move when the user scrolls up or down the page.
 
 2. With CSS3, how do we access the third element within another element?
+:nth-child(3). 
+:nth-child is a pseudo class where you can style the nth child of a parent element, 
+or any child element whose numeric position in the series of children matches the pattern an+b.
+an+b is placed inside the parentheses, e.g.:nth-child(2n+1), which represents the odd rows of an HTML table.
+a and b must both be integers. 
