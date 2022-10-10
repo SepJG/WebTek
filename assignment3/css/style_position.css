@@ -24,6 +24,6 @@ footer {
 ul{
   list-style-type: square;
 }
-li:last-child {
-  color:dodgerblue;
+ul ul :last-of-type{
+  color: dodgerblue;
 }
