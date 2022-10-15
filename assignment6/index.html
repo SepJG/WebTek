@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tax form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" type="module" defer></script>
+  </head>
+  <body>
+    <form
+      action="https://folk.ntnu.no/anderobs/webtek/receive_form.php"
+      method="post"
+    >
+    <fieldset>
+        <legend class="legend">Superhero form</legend>
+
+        <label for="fname" class="label">First name:</label>
+        <input type="text" name="first name" placeholder="Enter your first name" required/>
+
+        <br><br>
+
+        <label for="lname" class="label">Last name:</label>
+        <input type="text" name="last name" placeholder="Enter your last name" required/>
+        
+        <br><br>
+        <label for="Gender" class="label">Gender:</label>
+
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" value="Male" id="Male" required>
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" value="Female" id="Female">
+        
+        <br><br>
+        
+        <label for="email" class="label">E-mail:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+    
+        <br><br>
+
+        <label for="birthdate" class="label">Birthdate:</label>
+        <input type="date" max="1988-12-31" required>
+   
+        <br><br>
+
+        <label for="hname" class="label">Hero name:</label>
+        <input type="text" name="hero name" placeholder="Enter your hero name" required/>
+    
+        <br><br>
+        
+        <label for="Spandex" class="label">Do you wear spandex?</label>
+        <label for="Yes">Yes</label>
+        <input type="radio" name="Spandex" value="Yes" id="Yes" required>
+        <label for="No">No</label>
+        <input type="radio" name="Spandex" value="No" id="No">
+    
+        <br><br>
+
+        <label for="Cape" class="label">Do you wear cape?</label>
+        <label for="Yes">Yes</label>
+        <input type="radio" name="Cape" value="Yes" id="Yes" required>
+        <label for="No">No</label>
+        <input type="radio" name="Cape" value="No" id="No">
+    
+        <br><br>
+
+        <label for="Strength">Strength:</label>
+        <input type="number" id="Strength" name="Strength" max="10" min="1" required/>
+    
+        <br><br>
+
+        <label for="Speed">Speed:</label>
+        <input type="number" id="Speed" name="Speed" max="10" min="1" required/>
+    
+        <br><br>
+        <label for="Intelligence">Intelligence:</label>
+        <input type="number" id="Intelligence" name="Intelligence" max="10" min="1" required/>
+
+        <br><br>
+
+        <label for="income" class="label">Income:</label>
+        <input type="number" id="income" name="income" min="0" required/>
+
+        <br><br>
+
+        <label for="wealth" class="label">Wealth:</label>
+        <input type="number" id="wealth" name="wealth" min="0" required/>
+
+        <br><br>
+
+        <label for="tax" class="label">Tax:</label>
+        <input type="number" id="tax" name="tax" min="0" disabled/>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+
+    </form>
+  </body>
+</html>
+
