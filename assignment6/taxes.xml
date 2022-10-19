@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <persons> 
-  <person>
+  <person id="p1">
     <name>Nick Nedd</name>
     <gender>Male</gender>
     <e-mail>nick@tick.com</e-mail>
@@ -15,7 +15,7 @@
     <tax>29 794</tax>
   </person>
 
-  <person>
+  <person id="p2">
     <name>Bruce Wayne</name>
     <gender>Male</gender>
     <e-mail>bruce@wayneenterprises.com</e-mail>
@@ -30,7 +30,7 @@
     <tax>11 132 384</tax>
   </person>
 
-  <person>
+  <person id="p3">
     <name>Selina Kyle</name>
     <gender>Female</gender>
     <e-mail>selina@whiskas.com</e-mail>

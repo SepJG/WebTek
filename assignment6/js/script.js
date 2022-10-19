@@ -1,11 +1,3 @@
-// var tax = document.getElementById('tax');
-
-// function calculate() {
-//   var income = document.getElementById('income');
-//   var wealth = document.getElementById('wealth');
-//   tax.value = (0.35 * income) + (0.25 * wealth);
-// }
-
 var incomeEl = document.getElementById('income')
 var wealthEl = document.getElementById('wealth')
 var taxEl    = document.getElementById('tax');
