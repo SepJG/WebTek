@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Tax form</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" type="module" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <form
@@ -16,21 +16,21 @@
         <legend class="legend">Superhero Tax form</legend>
 
         <label for="fname" class="label">First name:</label>
-        <input type="text" name="first name" placeholder="Enter your first name" required/>
+        <input type="text" name="first name" id="fname" placeholder="Enter your first name" required>
 
         <br><br>
 
         <label for="lname" class="label">Last name:</label>
-        <input type="text" name="last name" placeholder="Enter your last name" required/>
+        <input type="text" name="last name" id="lname" placeholder="Enter your last name" required>
         
         <br><br>
-        <label for="Gender" class="label">Gender:</label>
-
-        <label for="Male">Male</label>
-        <input type="radio" name="Gender" value="Male" id="Male" required>
-        <label for="Female">Female</label>
-        <input type="radio" name="Gender" value="Female" id="Female">
-        
+        <span>Gender:</span>
+        <div class="radio-container">
+        <label for="Male1">Male</label>
+        <input type="radio" name="Gender" value="Male" id="Male1" required>
+        <label for="Female1">Female</label>
+        <input type="radio" name="Gender" value="Female" id="Female1">
+        </div>
         <br><br>
         
         <label for="email" class="label">E-mail:</label>
@@ -39,57 +39,91 @@
         <br><br>
 
         <label for="birthdate" class="label">Birthdate:</label>
-        <input type="date" max="1988-12-31" required>
+        <input type="date" max="1988-12-31" id="birthdate" required>
    
         <br><br>
 
         <label for="hname" class="label">Hero name:</label>
-        <input type="text" name="hero name" placeholder="Enter your hero name" required/>
+        <input type="text" name="hero name" id="hname" placeholder="Enter your hero name" required>
     
         <br><br>
         
-        <label for="Spandex" class="label">Do you wear spandex?</label>
+        <span>Do you wear spandex?</span>
+        <div class="radio-container">
         <label for="Yes">Yes</label>
         <input type="radio" name="Spandex" value="Yes" id="Yes" required>
         <label for="No">No</label>
         <input type="radio" name="Spandex" value="No" id="No">
-    
+        </div>
+
         <br><br>
 
-        <label for="Cape" class="label">Do you wear cape?</label>
-        <label for="Yes">Yes</label>
-        <input type="radio" name="Cape" value="Yes" id="Yes" required>
-        <label for="No">No</label>
-        <input type="radio" name="Cape" value="No" id="No">
-    
+        <div class="select">
+        <label for="Strength">Strength:</label>
+        <select name="Strength" id="Strength" required>
+          <option value="">1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
+          <option value="4">5</option>
+          <option value="5">6</option>
+          <option value="6">7</option>
+          <option value="7">8</option>
+          <option value="8">9</option>
+          <option value="9">10</option>
+        </select>
+        </div>
+
         <br><br>
 
-        <label for="Strength" class="label">Strength:</label>
-        <input type="number" id="Strength" name="Strength" max="10" min="1" placeholder="Enter your strength" required/>
-    
+        <div class="select">
+        <label for="Speed">Speed:</label>
+        <select name="Speed" id="Speed" required>
+          <option value="">1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
+          <option value="4">5</option>
+          <option value="5">6</option>
+          <option value="6">7</option>
+          <option value="7">8</option>
+          <option value="8">9</option>
+          <option value="9">10</option>
+        </select>
+        </div>
+
         <br><br>
 
-        <label for="Speed" class="label">Speed:</label>
-        <input type="number" id="Speed" name="Speed" max="10" min="1" placeholder="Enter your speed" required/>
-    
-        <br><br>
-        <label for="Intelligence" class="label">Intelligence:</label>
-        <input type="number" id="Intelligence" name="Intelligence" max="10" min="1" placeholder="Enter your intelligence" required/>
+        <div class="select">
+        <label for="Intelligence">Intelligence:</label>
+        <select name="Intelligence" id="Intelligence" required>
+          <option value="">1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
+          <option value="4">5</option>
+          <option value="5">6</option>
+          <option value="6">7</option>
+          <option value="7">8</option>
+          <option value="8">9</option>
+          <option value="9">10</option>
+        </select>
+        </div>
 
         <br><br>
 
         <label for="income" class="label">Income:</label>
-        <input type="number" id="income" name="income" min="0" placeholder="Enter your income" required/>
+        <input type="number" id="income" name="income" min="0" placeholder="Enter your income" required>
 
         <br><br>
 
         <label for="wealth" class="label">Wealth:</label>
-        <input type="number" id="wealth" name="wealth" min="0" placeholder="Enter your wealth" required/>
+        <input type="number" id="wealth" name="wealth" min="0" placeholder="Enter your wealth" required>
 
         <br><br>
 
         <label for="tax" class="label">Tax:</label>
-        <input type="number" value="0" id="tax" name="tax" min="0" disabled/>
+        <input type="number" value="0" id="tax" name="tax" min="0" disabled>
 
         <br><br>
 
