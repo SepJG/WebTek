@@ -14,3 +14,5 @@ function addTask(event) {
 }
 
 button.addEventListener("click", addTask);
+
+const tasks = []
