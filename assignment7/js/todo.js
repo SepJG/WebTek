@@ -43,6 +43,4 @@ list.addEventListener("click", () => {
   updateTasks();
 });
 
-
-
-const tasks = []
+button.addEventListener("click", addTask);
