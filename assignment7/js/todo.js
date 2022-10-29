@@ -42,3 +42,7 @@ list.addEventListener("click", () => {
   tasksCompleted = counter;
   updateTasks();
 });
+
+
+
+const tasks = []
