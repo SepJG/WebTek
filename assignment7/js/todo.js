@@ -26,7 +26,6 @@ function addTask(event) {
   updateTasks();
 }
 
-button.addEventListener("click", (event) => addTask(event));
 
 list.addEventListener("click", () => {
   let counter = 0;
